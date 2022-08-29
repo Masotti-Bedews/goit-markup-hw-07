@@ -67,6 +67,34 @@ a {
   border-radius: 4px;
 }
 
+:root {
+  --primary-text-color:#2F303A;
+  --tittle-text-color:#212121;
+  --general-text-color:#757575;
+  --accent-color:#2196F3;
+  --primary-bg-color:#F5F5F5;
+  --secondary-bg-color:#F5F4FA;
+  --white-color:#FFFFFF;
+  --footer-text-color:rgba(255, 255, 255, 0.6);
+  --secondary-button-colar:#188CE8;
+  --logo-dark-color:#000000;
+  --border-color:#EEEEEE;
+  --icon-color: #AFB1B8 ;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -102,7 +130,9 @@ header {
 
 .nav-part .link {
   color: var(--tittle-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-part .link:hover, .nav-part .link:focus {
   color: var(--accent-color);
@@ -838,7 +868,9 @@ main {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .holder .button-portfolio:hover, .holder .button-portfolio:focus {
   background-color: var(--accent-color);
