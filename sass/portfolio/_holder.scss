@@ -4,10 +4,7 @@
     padding-bottom: 94px;
             .section {
             color: var(--tittle-text-color);
-            font-weight: 700;
-                font-size: 18px;
-                line-height: 2;
-                letter-spacing: 0.06em;
+            @include font(700, 18px, 2, 0.06em);
               }
              .button-portfolio {
                 font-family: inherit;
@@ -15,9 +12,7 @@
                 background-color:var(--secondary-bg-color);
                 border: 0;
                 border-radius: 4px;
-                font-weight: 500;
-                    font-size: 16px;
-                    line-height: 1.62;
+                @include font(500, 16px, 1.62, null);
                 // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) , 
                 //             color 250ms cubic-bezier(0.4, 0, 0.2, 1) ,
                 //             box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -41,10 +36,7 @@
     height: 101%;
     padding: 63px 24px;
 
- 
-        font-size: 18px;
-        line-height: 1.5;
-        letter-spacing: 0.03em;
+    @include font(null, 18px, 1.5, 0.03em);
     color: var(--white-color);
     background-color:rgba(33, 150, 243, 0.9);
 

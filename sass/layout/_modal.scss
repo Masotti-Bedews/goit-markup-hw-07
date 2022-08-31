@@ -56,9 +56,7 @@
 
 .modal-tittle {
     text-align: center;
-    font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
+    @include font(700, 20px, 1.15, null);
     color: var(--tittle-text-color);
     margin-bottom: 12px;
 }
@@ -67,11 +65,7 @@
     display: block;
     margin-bottom: 4px;
 
-        
-        font-size: 12px;
-        line-height: 1.16;
-         letter-spacing: 0.01em;
-    
+        @include font(null, 12px, 1.16, 0.01em);
         color: var(--general-text-color);
     
 
@@ -135,11 +129,7 @@
         border-color: var(--accent-color);
     }
      &::placeholder {
-
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-    
+        @include font(null, 12px, 1.16, 0.01em);
         color: rgba(117, 117, 117, 0.5);
 }
 }
@@ -149,11 +139,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-        font-size: 14px;
-        line-height: 1.7;
-         letter-spacing: 0.03em;
-    
+
+    @include font(null, 14px, 1.7, 0.03em);
         color: #757575;
 
        span {
@@ -191,10 +178,7 @@
 .condition {
     color: var(--accent-color);
     text-decoration: underline  ;
-   
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
+        @include font(null, 14px, 1.7, 0.03em);
 
 }
 
@@ -215,10 +199,7 @@
         border-radius: 4px;
         border: none;
 
-        font-weight: 700;
-            font-size: 16px;
-            line-height: 1.87;
-            letter-spacing: 0.06em;
+        @include font(700, 16px, 1.87, 0.06em);
              align-items: center;
              color: var(--white-color);
         cursor: pointer;
