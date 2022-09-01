@@ -9,8 +9,11 @@
 
 
 @import "./components/container" ;
+@import "./components/tittle";
+@import "./components/btn";
+@import "./components/soc-contact";
+@import "./components/logo" ;
 
-@import "./layout/logo" ;
 @import "./layout/header" ;
 @import "./layout/hero" ;
 @import "./layout/features" ;
@@ -19,10 +22,6 @@
 @import "./layout/rag-customers" ;
 @import "./layout/footer" ;
 @import "./layout/modal" ;
-
-// ______________portfolio__________________
-
-@import "./portfolio/assortment" ;
-@import "./portfolio/btn" ;
-@import "./portfolio/holder" ;
+@import "./layout/assortment" ;
+@import "./layout/holder" ;
 
