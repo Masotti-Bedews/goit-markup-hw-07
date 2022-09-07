@@ -763,6 +763,10 @@ a {
   border: none;
 }
 
+.modal-check:focus + .span {
+  border: 2px solid var(--accent-color);
+}
+
 .check-icon {
   fill: transparent;
 }
@@ -813,12 +817,19 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
   border-radius: 50%;
-}
-
-.close-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn__icon {
+  fill: currentColor;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: var(--accent-color);
 }
 
 .header {
